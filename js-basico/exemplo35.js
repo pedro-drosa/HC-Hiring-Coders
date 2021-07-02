@@ -1,8 +1,9 @@
 //Crie uma função que recebe o ano de nascimento da pessoa 
 //informando se ela é maior de idade ou menor.
 
-function verify(year) {
-  return new Date().getFullYear() - year ? `Maior` : `Menor`;
+function calculateAge(year) {
+  const age = new Date().getFullYear() - year;
+  return  age  >= 18 ? `Idade: ${age} - Maior` : `Idade: ${age} - Menor`;
 }
 
-console.log(verify(1995));
+console.log(calculateAge(1995));
