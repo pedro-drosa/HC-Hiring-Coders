@@ -1,19 +1,15 @@
+import { useNavigate } from "react-router-dom";
+import { THeaderProps } from "../../types/THeaderProps";
 import { Content, RepositoryControll } from "./styles";
 
-type HeaderProps = {
-  userData: {
-    login: string;
-    name: string;
-    avatar_url: string;
-    bio: string;
-  };
-};
+export const Header = ({ userData }: THeaderProps): JSX.Element => {
+  const navigate = useNavigate();
 
-function handleClick() {
-  localStorage.removeItem("@hcgitreact");
-}
+  function handleClick() {
+    localStorage.removeItem("@hcgitreact");
+    navigate("/");
+  }
 
-export const Header = ({ userData }: HeaderProps): JSX.Element => {
   return (
     <Content>
       <img src={userData.avatar_url} alt={userData.name} />
@@ -22,11 +18,7 @@ export const Header = ({ userData }: HeaderProps): JSX.Element => {
         <span>@{userData.login}</span>
         <p>{userData.bio} </p>
         <RepositoryControll>
-          <a
-            href={`https://github.com/${userData.login}`}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={`https://github.com/${userData.login}`}>
             Ver perfil completo
           </a>
           <button onClick={handleClick}>Buscar outro usuário</button>

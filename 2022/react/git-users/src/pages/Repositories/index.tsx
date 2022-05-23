@@ -1,11 +1,9 @@
-import { Book } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../components/Header";
 import { Container } from "../../styles/global";
 import { TUserData } from "../../types/TUserData";
-
-import { RepositoryInfo, Repository } from "./styles";
+import { RepositoryInfo } from "../../components/Repository";
 
 export const Repositories = (): JSX.Element => {
   const [userData, setUserData] = useState<TUserData>({} as TUserData);
@@ -26,22 +24,10 @@ export const Repositories = (): JSX.Element => {
       {!loadingUserData && userData.user && userData.repositories ? (
         <>
           <Header userData={userData.user} />
-          <RepositoryInfo>
-            {userData.repositories.map((repository) => {
-              return (
-                <Repository
-                  href={`https://github.com/${userData.user.login}/${repository.name}`}
-                  key={repository.id}
-                >
-                  <h2>
-                    <Book weight="thin" color="#777" />
-                    {repository.name}
-                  </h2>
-                  <p>{repository.description}</p>
-                </Repository>
-              );
-            })}
-          </RepositoryInfo>
+          <RepositoryInfo
+            repositoriesData={userData.repositories}
+            userLogin={userData.user.login}
+          />
         </>
       ) : (
         <h1>Carregando, pera ae mano!</h1>

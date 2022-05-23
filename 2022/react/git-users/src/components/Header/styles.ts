@@ -3,11 +3,8 @@ import styled from "styled-components";
 export const Content = styled.div`
   display: flex;
   align-items: center;
-
-  width: 100%;
-
+  padding-bottom: 20px;
   gap: 20px;
-  padding: 20px;
 
   span {
     color: #777777;
@@ -39,6 +36,10 @@ export const RepositoryControll = styled.nav`
 
     &:hover {
       color: #04d361;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 0.2rem;
     }
   }
 `;

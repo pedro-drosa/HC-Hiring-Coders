@@ -6,10 +6,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
 
     :focus {
       outline: 2px solid #04d361;
-      outline-offset: 1px;
+      outline-offset: 2px;
+      border-radius: 5px;
     }
   }
 

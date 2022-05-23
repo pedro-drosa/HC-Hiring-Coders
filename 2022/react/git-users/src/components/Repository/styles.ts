@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
-export const RepositoryInfo = styled.section`
+export const Content = styled.section`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 210px;
 `;
 
 export const Repository = styled.a`
-  border: 1px solid #777777;
-  border-radius: 5px;
-  padding: 15px;
   transition: transform 0.2s ease-out 100ms;
 
   h2 {
@@ -20,6 +19,6 @@ export const Repository = styled.a`
   }
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 `;
