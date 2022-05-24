@@ -6,7 +6,7 @@ export function Signin() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:5000`, {
+    fetch(`http://localhost:5000/authenticate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

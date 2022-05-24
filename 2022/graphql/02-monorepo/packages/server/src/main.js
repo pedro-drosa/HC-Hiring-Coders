@@ -1,18 +1,24 @@
 import express from "express";
-
+import cors from "cors";
 const server = express();
 
-server.get("/", (req, res) => {
+const enableCors = cors({
+  origin: "http://localhost:3000",
+});
+
+server.get("/status", (req, res) => {
   res.send({ status: "Ok" });
 });
 
-server.post("/signin", express.json(), (req, res) => {
-  console.log({
-    email: req.body.email,
-    password: req.body.password,
+server
+  .options("/authenticate", enableCors)
+  .post("/authenticate", enableCors, express.json(), (req, res) => {
+    console.log({
+      email: req.body.email,
+      password: req.body.password,
+    });
+    res.send({ status: true });
   });
-  res.send();
-});
 
 const APP_PORT = process.env.PORT | 5000;
 const BASE_URL = "http://localhost";
