@@ -34,7 +34,6 @@ export function Signin() {
           id="email"
           inputMode="email"
           onChange={handleEmailChange}
-          a
           autoComplete="username"
         />
         <label htmlFor="password">Senha:</label>

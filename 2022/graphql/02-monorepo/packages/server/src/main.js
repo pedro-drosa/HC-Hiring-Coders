@@ -1,6 +1,8 @@
 import express from "express";
 import { ApolloServer, gql } from "apollo-server-express";
 import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-core";
+import typeDefs from "./graphql/typeDefs";
+import resolvers from "./graphql/resolvers";
 // import cors from "cors";
 
 const app = express();
@@ -8,29 +10,8 @@ const app = express();
 async function startServer() {
   const server = new ApolloServer({
     plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
-    typeDefs: gql`
-      type Client {
-        id: ID!
-        name: String!
-      }
-
-      type Demand {
-        id: String!
-        name: String
-        client: Client
-        deadline: String
-      }
-
-      type Query {
-        demands: [Demand]!
-      }
-    `,
-
-    resolvers: {
-      Query: {
-        demands: () => [],
-      },
-    },
+    typeDefs,
+    resolvers,
   });
 
   await server.start();
@@ -38,6 +19,7 @@ async function startServer() {
   server.applyMiddleware({
     app,
     cors: { origin: "http://localhost:3000" },
+    bodyParserConfig: true,
   });
 }
 
