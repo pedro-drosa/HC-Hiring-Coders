@@ -5,7 +5,20 @@ export const typeDefs = gql`
     items: [Node!]!
     totalItems: Int!
   }
+  enum ListSortmentEnum {
+    ASC
+    DESC
+  }
+  input ListSort {
+    sorter: String!
+    sortment: ListSortmentEnum!
+  }
 `;
+
+export const ListSortmentEnum = Object.freeze({
+  ASC: "ASC",
+  DESC: "DESC",
+});
 
 export const resolvers = {
   List: {
