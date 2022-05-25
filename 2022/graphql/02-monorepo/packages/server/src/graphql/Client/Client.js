@@ -4,16 +4,26 @@ import createRepository from "../../io/database/createRepository";
 const clientRepository = createRepository("client");
 
 export const typeDefs = gql`
-  type Client {
+  type Client implements Node {
     id: ID!
     name: String!
     email: String!
     disabled: Boolean!
   }
 
+  type ClientList implements List {
+    items: [Client!]!
+    totalItems: Int!
+  }
+
+  input ClientListOptions {
+    take: Int
+    skip: Int
+  }
+
   extend type Query {
     client(id: ID): Client
-    clients: [Client!]!
+    clients(options: ClientListOptions): ClientList
   }
 `;
 
@@ -24,9 +34,14 @@ export const resolvers = {
       return clients.find((client) => client.id === id);
     },
 
-    clients: async () => {
+    clients: async (_, args) => {
+      const { take = 10, skip = 0 } = args.options || {};
       const clients = await clientRepository.read();
-      return clients;
+
+      return {
+        items: clients.slice(skip, skip + take),
+        totalItems: clients.length,
+      };
     },
   },
 };
