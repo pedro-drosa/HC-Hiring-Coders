@@ -20,5 +20,10 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/data/*"
+    ]
   }
 }
