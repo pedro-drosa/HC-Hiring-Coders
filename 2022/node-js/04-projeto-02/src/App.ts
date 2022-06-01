@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express';
 
 class App {
   public server;
@@ -8,6 +8,7 @@ class App {
   }
 
   routes() {}
+
   middlewares() {}
 }
 
