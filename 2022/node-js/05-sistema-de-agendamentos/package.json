@@ -2,9 +2,8 @@
   "name": "05-sistema-de-agendamentos",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",

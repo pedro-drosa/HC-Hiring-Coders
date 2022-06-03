@@ -1,5 +1,5 @@
 {
   "execMap": {
-    "sucrase-node": "src/server.js"
+    "js": "sucrase-node"
   }
 }

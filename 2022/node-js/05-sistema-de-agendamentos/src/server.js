@@ -1,4 +1,4 @@
-const App = require("./App");
+import App from "./App";
 
 const port = 3000;
 const url = "http://localhost";
