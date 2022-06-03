@@ -2,14 +2,18 @@
   "name": "05-sistema-de-agendamentos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "sucrase": "^3.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
