@@ -1,3 +1,4 @@
+import bcryptjs from "bcryptjs";
 import { Model, DataTypes } from "sequelize";
 
 class User extends Model {
@@ -6,11 +7,17 @@ class User extends Model {
       {
         name: DataTypes.STRING,
         email: DataTypes.STRING,
+        password: DataTypes.VIRTUAL,
         password_hash: DataTypes.STRING,
         provider: DataTypes.BOOLEAN,
       },
       { sequelize }
     );
+    this.addHook("beforeCreate", async (user) => {
+      if (user.password) {
+        user.password_hash = await bcryptjs.hash(user.password, 10);
+      }
+    });
   }
 }
 
