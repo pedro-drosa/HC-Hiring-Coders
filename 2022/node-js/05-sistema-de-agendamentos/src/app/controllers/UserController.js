@@ -9,6 +9,10 @@ class UserController {
     const { id, name, email, provider } = await User.create(req.body);
     res.json({ id, name, email, provider });
   }
+
+  async update(req, res) {
+    res.json({ message: req.userId });
+  }
 }
 
 export default new UserController();
