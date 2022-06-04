@@ -18,6 +18,12 @@ class User extends Model {
         user.password_hash = await bcryptjs.hash(user.password, 10);
       }
     });
+
+    this.addHook("beforeUpdate", async (user) => {
+      if (user.password) {
+        user.password_hash = await bcryptjs.hash(user.password, 10);
+      }
+    });
   }
 
   checkPassword(password) {
