@@ -1,0 +1,15 @@
+{
+  "name": "estrutura-de-dados",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binarySearch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^4.2.1"
+  }
+}
