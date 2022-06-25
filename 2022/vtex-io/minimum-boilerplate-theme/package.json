@@ -1,0 +1,25 @@
+{
+  "name": "hc-hiring-coders",
+  "version": "1.0.0",
+  "description": "training summaries and exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-drosa/HC-Hiring-Coders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedro-drosa/HC-Hiring-Coders/issues"
+  },
+  "homepage": "https://github.com/pedro-drosa/HC-Hiring-Coders#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "jasmine": "^4.1.0",
+    "typescript": "^4.6.4"
+  }
+}
