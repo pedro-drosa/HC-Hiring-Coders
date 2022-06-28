@@ -7,7 +7,8 @@
       "slider-layout#home",
       "flex-layout.row",
       "responsive-layout.desktop#desktop",
-      "responsive-layout.mobile#mobile"
+      "responsive-layout.mobile#mobile",
+      "tab-layout"
     ]
   },
   "rich-text": {
