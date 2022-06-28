@@ -8,7 +8,10 @@
       "flex-layout.row",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "tab-layout"
+      "tab-layout",
+      "modal-trigger#first",
+      "list-context.product-list",
+      "stack-layout#cta"
     ]
   },
   "rich-text": {
