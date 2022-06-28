@@ -1,0 +1,18 @@
+{
+  "modal-trigger#first": {
+    "children": ["rich-text#trigger", "modal-layout#first"]
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
+  "modal-layout#first": {
+    "children": ["rich-text#hello"]
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Hello"
+    }
+  }
+}
