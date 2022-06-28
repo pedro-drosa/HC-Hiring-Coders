@@ -1,6 +1,10 @@
 {
   "store.product": {
-    "children": ["breadcrumb", "flex-layout.row#main"]
+    "children": [
+      "condition-layout.product",
+      "breadcrumb",
+      "flex-layout.row#main"
+    ]
   },
   "flex-layout.row#main": {
     "props": {
