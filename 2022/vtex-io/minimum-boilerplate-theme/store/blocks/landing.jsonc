@@ -1,0 +1,23 @@
+{
+  "store.custom#landing": {
+    "blocks": ["image#landingbanner", "search-result-layout.customQuery"]
+  },
+  "image#landingbanner": {
+    "props": {
+      "src": "https://res.cloudinary.com/pedro-drosa/image/upload/v1656371783/VTEX-STORE/1920x360_3_vtzogu.jpg",
+      "minWidth": "100%"
+    }
+  },
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "placas de vídeo",
+        "mapField": "ft"
+      }
+    },
+    "blocks": ["search-result-layout.desktop"]
+  }
+}
