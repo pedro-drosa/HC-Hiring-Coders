@@ -11,7 +11,9 @@
       "tab-layout",
       "modal-trigger#first",
       "list-context.product-list",
-      "stack-layout#cta"
+      "stack-layout#cta",
+      "info-card#clearance",
+      "info-card#vintage"
     ]
   },
   "rich-text": {
