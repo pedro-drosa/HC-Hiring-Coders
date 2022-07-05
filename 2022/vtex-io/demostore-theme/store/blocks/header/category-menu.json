@@ -29,11 +29,11 @@
       "items": [
         {
           "id": "menu-item-category-electronics",
-          "type": "custom",
+          "type": "category",
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "categoryId": 153,
+            "categoryId": 1,
             "type": "internal",
             "href": "/electronics/",
             "noFollow": true,
@@ -43,11 +43,11 @@
         },
         {
           "id": "menu-item-category-major-appliances",
-          "type": "custom",
+          "type": "category",
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "categoryId": "151",
+            "categoryId": 12,
             "type": "internal",
             "href": "/major-appliances/",
             "noFollow": true,
@@ -57,11 +57,11 @@
         },
         {
           "id": "menu-item-category-small-appliances",
-          "type": "custom",
+          "type": "category",
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "categoryId": 152,
+            "categoryId": 3,
             "type": "internal",
             "href": "/small-appliances",
             "noFollow": true,
