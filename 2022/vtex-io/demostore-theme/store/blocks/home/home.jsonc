@@ -35,9 +35,7 @@
   },
 
   "flex-layout.row#brands": {
-    "children": [
-      "slider-layout#brands"
-    ],
+    "children": ["slider-layout#brands"],
     "props": {
       "marginTop": 4,
       "marginBottom": 8
@@ -49,7 +47,7 @@
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "never",
-      "collection": "139",
+      "collection": "138",
       "productList": {
         "maxItems": 9,
         "itemsPerPage": 3,
@@ -65,7 +63,7 @@
     "blocks": ["product-summary.shelf"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "collection": "140",
+      "collection": "137",
       "paginationDotsVisibility": "desktopOnly",
       "productList": {
         "maxItems": 9,
