@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto&display=swap');
+
+.notificationBarContainer {
+  background-color: #E6F1E6;
+  color: #03034E;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.searchBarContainer {
+  max-width: 265px;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #E6F1E6;
+  padding: 0px;
+}
+
+.newsletter {
+  color: #727273;
+  max-width: 1528px;
+  padding-top: 1rem;
+}
+
+/* #newsletter-input {
+  background-color: #ffffff;
+} */
+
+.newsletter .container {
+  padding: 0 0 20px 0;
+}
+
+.label {
+  color: #727273;
+  font-size: 18px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+/* .inputGroup input {
+  background-color: #ffffff;
+  color: #727273;
+  border: 2px solid #E3E4E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+} */
+
+/* .inputGroup input::placeholder {
+  color: #fff;
+  font-size: 16px;
+} */
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.infoCardTextContainer--depbanner {
+  min-height: 400px;
+}
+
+@media only screen and (min-width: 640px) {
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.imageElement {
+
+}
+/*
+.shippingContainer {
+  background: red;
+}
+
+
+.shippingContainer .items-start {
+  width: 50%;
+} */
