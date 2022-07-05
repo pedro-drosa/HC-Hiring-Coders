@@ -19,24 +19,16 @@
     ]
   },
   "flex-layout.col#instagram-post1": {
-    "children": [
-      "sandbox#instagram-post1"
-    ]
+    "children": ["sandbox#instagram-post1"]
   },
   "flex-layout.col#instagram-post2": {
-    "children": [
-      "sandbox#instagram-post2"
-    ]
+    "children": ["sandbox#instagram-post2"]
   },
   "flex-layout.col#instagram-post3": {
-    "children": [
-      "sandbox#instagram-post3"
-    ]
+    "children": ["sandbox#instagram-post3"]
   },
   "flex-layout.col#instagram-post4": {
-    "children": [
-      "sandbox#instagram-post4"
-    ]
+    "children": ["sandbox#instagram-post4"]
   },
   "sandbox#instagram-post1": {
     "props": {

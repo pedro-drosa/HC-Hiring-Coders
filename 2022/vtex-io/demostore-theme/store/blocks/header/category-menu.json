@@ -13,9 +13,9 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "categoryId": 153,
+        "categoryId": "2",
         "type": "internal",
-        "href": "/electronics/",
+        "href": "/nvidia?map=ft",
         "noFollow": true,
         "tagTitle": "Electronics",
         "text": "Electronics"
@@ -30,9 +30,9 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "categoryId": "151",
+        "categoryId": "2",
         "type": "internal",
-        "href": "/major-appliances/",
+        "href": "/notebook?map=ft",
         "noFollow": true,
         "tagTitle": "Major Appliances",
         "text": "Major Appliances"
@@ -48,7 +48,7 @@
       "itemProps": {
         "categoryId": 152,
         "type": "internal",
-        "href": "/small-appliances",
+        "href": "/nvidia?map=ft",
         "noFollow": true,
         "tagTitle": "Small appliances",
         "text": "Small appliances"
