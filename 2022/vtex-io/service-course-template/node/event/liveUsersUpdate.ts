@@ -20,7 +20,7 @@ export async function updateLiveUsers(ctx: EventContext<Clients>) {
             page: 1,
             pageSize: 1,
           },
-          schema: "v1",
+          schema: "p0",
           where: `slug=${slug}`,
         });
 
