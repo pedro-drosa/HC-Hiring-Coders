@@ -1,1 +1,1 @@
-export const COURSE_ENTITY = 'course_backend_product_list'
+export const COURSE_ENTITY = "backend_course_product_list";

@@ -2224,7 +2224,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-"stats-lite@github:vtex/node-stats-lite#dist":
+stats-lite@vtex/node-stats-lite#dist:
   version "2.2.0"
   resolved "https://codeload.github.com/vtex/node-stats-lite/tar.gz/1b0d39cc41ef7aaecfd541191f877887a2044797"
   dependencies:
@@ -2529,6 +2529,14 @@ vary@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+"vtex.backend-course@https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.backend-course@0.0.2+build1657399281/public/_types/react":
+  version "0.0.0"
+  resolved "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.backend-course@0.0.2+build1657399281/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+
+"vtex.events-example@https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.events-example@0.0.1+build1657398380/public/_types/react":
+  version "0.0.0"
+  resolved "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.events-example@0.0.1+build1657398380/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
 which@^1.2.9:
   version "1.3.1"

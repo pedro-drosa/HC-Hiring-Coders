@@ -9,7 +9,9 @@
     "eslint": "^6.3.0",
     "eslint-config-vtex": "^11.0.0",
     "prettier": "^1.18.2",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "vtex.backend-course": "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.backend-course@0.0.2+build1657399281/public/_types/react",
+    "vtex.events-example": "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/vtex.events-example@0.0.1+build1657398380/public/_types/react"
   },
   "resolutions": {
     "**/**/lodash": "^4.17.19"
