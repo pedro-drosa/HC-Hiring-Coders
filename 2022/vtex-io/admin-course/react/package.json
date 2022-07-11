@@ -20,7 +20,9 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
+    "travellog.travellog-service-example": "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/travellog.travellog-service-example@0.0.0+build1657542895/public/@types/travellog.travellog-service-example",
     "typescript": "3.9.7",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
   }
 }
