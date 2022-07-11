@@ -4794,9 +4794,9 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-"travellog.travellog-service-example@https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/travellog.travellog-service-example@0.0.0+build1657542895/public/@types/travellog.travellog-service-example":
+"travellog.travellog-service-example@https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/travellog.travellog-service-example@0.0.0+build1657543317/public/@types/travellog.travellog-service-example":
   version "0.0.0"
-  resolved "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/travellog.travellog-service-example@0.0.0+build1657542895/public/@types/travellog.travellog-service-example#ebaab6d064f9ae49343c9a3fd3049bd17d20b828"
+  resolved "https://pedromascarenhas--travellog.myvtex.com/_v/private/typings/linked/v1/travellog.travellog-service-example@0.0.0+build1657543317/public/@types/travellog.travellog-service-example#656442660cc1f671a3e10d3b16c300ffae5a2ba9"
 
 ts-invariant@^0.4.0, ts-invariant@^0.4.4:
   version "0.4.4"
